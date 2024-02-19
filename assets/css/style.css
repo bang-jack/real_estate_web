@@ -395,6 +395,29 @@ body{
   z-index:4;
 }
 
+.navbar.active,
+.navbar-list,
+.navbar-wrapper{
+  display:grid;
+  gap:8px;
+}
+
+.navbar-link,
+.btn-link{
+  color:var(--neutral-30);
+  padding:6px 12px;
+  transition: var(--transition-duration-quick) var(--transition-easing-quick);
+}
+
+.btn-link{
+  border-block-start: 1px solid var(--neutral-90);
+  padding-block-start: 14px;
+}
+
+:is(.navbar-link):is(:hover, :focus-visible),
+.navbar-link.active {color:var(--primary-100);}
+
+.navbar .btn {min-width: 100%;;}
 
 /*-----------------------------------*\
   #HERO
