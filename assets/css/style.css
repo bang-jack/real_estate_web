@@ -384,15 +384,18 @@ body{
   padding: 10px;
   border-radius:var(--radius-large);
   box-shadow: var(--shadow-1);
-
-  /* visibility:hidden;
+  visibility:hidden;
   opacity:0;
   scale:0.4;
-  */
-  
   transition: var(--transition-duration-quick) var(--transition-easing-quick);
   transform-origin: top right;
   z-index:4;
+}
+
+.navbar.active{
+  visibility: visible;
+  opacity: 1;
+  scale: 1;
 }
 
 .navbar.active,
@@ -417,7 +420,7 @@ body{
 :is(.navbar-link):is(:hover, :focus-visible),
 .navbar-link.active {color:var(--primary-100);}
 
-.navbar .btn {min-width: 100%;;}
+.navbar .btn {min-width: 100%;}
 
 /*-----------------------------------*\
   #HERO
